@@ -56,10 +56,7 @@ public:
 };
 
 int main() {
-    string s;
-    s.push_back('a');
-    cout << s.length() << endl;
-    s.erase(0,1);
-    cout << s.length() << endl;
-    return 0;
+    int i=0;
+    if (i++) cout << i << endl;
+    cout << i << endl;
 }

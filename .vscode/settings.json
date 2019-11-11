@@ -10,6 +10,7 @@
         "random": "cpp",
         "limits": "cpp",
         "algorithm": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "ostream": "cpp"
     }
 }
