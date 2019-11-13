@@ -24,23 +24,26 @@ public:
             p = q;
             q = tmp;
         }
-        cout << tmp->val << endl;
         head->next = tmp;
     }
     ListNode* reverseKGroup(ListNode* head, int k) {
-        ListNode *p=head, *q=head, *prev=new ListNode(0);
+        ListNode *p=head, *q=head, *prev=new ListNode(0), *tmp;
         int count=0, first=0;
+        if (k==1) return head;
         while (p!=NULL) {
             count++;
             if (count == k) {
                 count = 0;
-                if (!first) head = p;
+                if (!first) {
+                    head = p;
+                    first = 1;
+                }
+                tmp = p->next;
                 reverse(q, p);
                 prev->next = p;
-                prev = p;
-                p = p->next;
-                q = p;
-                first++;
+                prev = q;
+                q = tmp;
+                p = tmp;
             } 
             else p=p->next;
         }

@@ -11,6 +11,7 @@
         "limits": "cpp",
         "algorithm": "cpp",
         "functional": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "map": "cpp"
     }
 }
