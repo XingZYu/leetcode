@@ -12,6 +12,8 @@
         "algorithm": "cpp",
         "functional": "cpp",
         "ostream": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "*.tcc": "cpp",
+        "sstream": "cpp"
     }
 }
