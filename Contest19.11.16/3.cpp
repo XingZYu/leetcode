@@ -46,6 +46,14 @@ public:
         }
         return result;
     }
+    void combine(vector<string>& syn1, vector<string>& syn2) {
+        int i, j;
+        for (i=0; i<syn1.size()) {
+            for (j=0; j<syn2.size()) {
+
+            }
+        }
+    }
     vector<string> generateSentences(vector<vector<string>>& synonyms, string text) {
         vector<string> result;
         unordered_map<string, string> parent;
